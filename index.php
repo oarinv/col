@@ -19,10 +19,9 @@ $this->need('header.php');
 	<div class="header">
 		<?php $this->need('col-header.php'); ?>
 	</div>
+
 	<div class="content">
 		<?php $this->need('col-content.php'); ?>
-
-
 	</div>
 	<div class="footer">
 		<?php $this->need('col-footer.php'); ?>

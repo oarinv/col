@@ -3,6 +3,12 @@
     src: url(./font/LXGWWenKai-Regular.woff2);
 
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "PingFang SC",LXGW,sans-serif;
+}
 html,body{
     width: 100%;
     height: 100%;
@@ -86,7 +92,6 @@ img{
     color: #fff;
 }
 .nav{
-display: flex;
     height: 50px;
     padding: 5px 40px;
     display: flex;
@@ -98,12 +103,51 @@ display: flex;
 .meun a{
     display: block;
     height: 100%;
-    line-height: 2.5;
+    line-height: 40px;
+    text-align: center;
 }
-.nav-left{
+.nav-left,nav-right{
     display: flex;
     align-items: center;
     height: 100%;
+    gap: 10px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    gap:20px;
+
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+}
+#search input,#search button{
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 1em;
+    outline: none;
+}
+#search input{
+    height: 100%;
+    width: 150px;
+    display: block;
+    background-color: #eee;
+}
+.btn1{
+    background-color: #1296db;
+    border: 1px solid #eee;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 1em;
+    outline: none;
 }
 .meun{
     font-size: 1.3em;
@@ -116,7 +160,7 @@ display: flex;
     color: #1a2a3a;
 }
 .meun a:hover{
-    color: #591804;
+    color: #000;
 }
 .bgimg{
     width: 100%;
@@ -149,23 +193,33 @@ display: flex;
     display: inline-block;
 }
 .ce-c{
-        display: none;
+        visibility: hidden;
         position: absolute;
-        background-color: #f9f9f9;
-        width: 100px;
+        background-color: #fff;
+        max-height: 80vh;
+        min-width: 6.7rem;
+        overflow-y: auto;
+        padding: .5rem;
         font-size: 14px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         text-align: center;
         border-radius: 4px;
-        left: -30px;
+        left: -25px;
+        opacity: 0;
+        transition: all 0.5s;
 
 
 }
 .ce:hover .ce-c {
-    display: block;
+    visibility:visible;
+    opacity: 1;
   }
-  .ce-c-list{
-    border-bottom: 1px solid rgba(238,238,238,0.33);
+.ce-c-list{
+    padding: 0 10px;
+    border-radius: 4px;
+  }
+  .ce-c-list:hover{
+    background-color: #eee;
   }
 /*页面主体*/
 .page{
@@ -281,7 +335,7 @@ font-size: 13px;
 /*文章尾部*/
 .footer	{
 
-    height: 80px;
+    height: 100px;
     padding: 20px;
     background-color: #fff;
     display: flex;
@@ -289,7 +343,7 @@ font-size: 13px;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
+    gap: 10px;
 
 }
 /*分页样式*/

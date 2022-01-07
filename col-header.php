@@ -9,6 +9,12 @@
     </div>
 
     </div>
+    <div class="nav-right">
+    <form id="search" method="post" action="http://dsddad/" role="search">
+    <input type="text" id="s" name="s"  placeholder="输入关键字搜索"><button type="submit" class="btn1">搜索</button>
+    </form>
+    <div><a href="<?php $this->options->siteUrl("/admin"); ?>">登录</a></div>
+    </div>
 
 
 </div>
