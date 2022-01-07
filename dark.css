@@ -1,0 +1,109 @@
+.title h1{
+    color: #ccc!important;
+}
+.title p{
+    color: #ccc!important;
+}
+body.night{
+    background: #303030;
+}
+.nav a{
+    color: #ccc!important;
+}
+.header{
+    background-color: #242424!important;
+}
+.page{
+    background-color: #242424!important;
+    border-bottom: 1px solid #555;
+}
+.page a{
+    color: #ccc!important;
+}
+.page h1{
+    color: #ccc!important;
+}
+.nav{
+    border-bottom: 1px solid #555!important;
+}
+.post{
+    background-color: #242424!important;
+}
+.post p{
+    color: #ccc!important;
+}
+.post a{
+    color: #ccc!important;
+}
+.post h1{
+
+    color: #ccc!important;
+}
+.post-meta{
+    color: #7c8388!important;
+}
+.post-meta a{
+    color: #7c8388!important;
+}
+#comments{
+    background-color: #242424!important;
+    border-top:1px solid #555!important ;
+}
+#comments input{
+    background-color: #303030!important;
+    border: 1px solid #555!important;
+    color: #ccc!important;
+}
+#comments textarea{
+    background-color: #303030!important;
+    border: 1px solid #555!important;
+    color: #ccc!important;
+}
+.time{
+    color: #ccc!important;
+}
+.pg{
+    background-color: #242424!important;
+}
+#comments h3{
+    color: #ccc!important;
+}
+#comments button{
+    color: #ccc!important;
+}
+.btn{
+    background-color: #303030!important;
+}
+.page-navigator{
+    background-color: #242424!important;
+
+
+}
+.footer{
+    background-color: #242424!important;
+}
+.footer a{
+    color: #ccc!important;
+}
+.commeta{
+    color: #ccc!important;
+}
+.comment-content{
+    border-top: 1px solid #555;
+}
+.post input{
+    background-color: #303030!important;
+    border: #555!important;
+    color: #ccc!important;
+}
+.logoutname a{
+    color: #ccc!important;
+
+}
+.logoutbtn{
+    background-color: #303030!important;
+}
+
+.content{
+    background-color: #242424!important;
+}
