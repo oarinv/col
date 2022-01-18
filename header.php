@@ -5,6 +5,7 @@
     <meta charset="<?php $this->options->charset(); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title><?php $this->options->title(); ?></title>
+    <link rel="shortcut icon" href="<?php $this->options->other(); ?>" type="image/x-icon">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('animation.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('prism.css'); ?>">

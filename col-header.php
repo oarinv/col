@@ -1,7 +1,7 @@
 <div class="nav">
     <div class="nav-left">
-    <div class="meun meun-title"><a href="<?php $this->options->siteUrl(); ?>">首页</a></div>
-    <div class="meun ce"><a>分类</a>
+    <div class="meun meun-title"><a class="meun_a" href="<?php $this->options->siteUrl(); ?>">首页</a></div>
+    <div class="meun ce"><a  class="meun_a">分类</a>
     <div class="ce-c">
     <?php $this->widget('Widget_Metas_Category_List')
                ->parse('<div class="ce-c-list"><a href="{permalink}">{name}</a></div>'); ?>
