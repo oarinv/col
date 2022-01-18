@@ -230,9 +230,10 @@ nav-right {
   padding: 20px 0;
   margin: 0 40px;
   background-color: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 215px;
+  grid-template-rows:100% ;
   justify-content: space-between;
-  flex-direction: row;
   gap: 25px;
   border-bottom: 1px solid #eee;
 }
@@ -242,6 +243,8 @@ nav-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+
 }
 .page-left a {
   line-height: var(--text-lineheight);
@@ -259,7 +262,6 @@ nav-right {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  flex-shrink: 0;
 }
 .page_img {
   width: 100%;
