@@ -1,6 +1,6 @@
 @font-face {
     font-family:LXGW;
-    src: url(./font/LXGWWenKai-Regular.woff2);
+    src: url(./font/DFPKingGothicGB-Medium.ttf);
 
 }
 *{
@@ -224,7 +224,7 @@ img{
 /*页面主体*/
 .page{
 
-    height: 140px;
+    height: 180px;
     padding: 20px 0 ;
     margin: 0 40px;
     background-color: #fff;
