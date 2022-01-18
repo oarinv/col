@@ -18,29 +18,4 @@ function themeConfig($form)
 
 
 }
-function thumb($cid) {
-  if (empty($imgurl)) {
-  $rand_num = 10; //随机图片数量，根据图片目录中图片实际数量设置
-  if ($rand_num == 0) {
-  $imgurl = "随机图片存放目录/0.jpg";
-  //如果$rand_num = 0,则显示默认图片，须命名为"0.jpg"，注意是绝对地址
-      }else{
-  $imgurl = "随机图片存放目录/".rand(1,$rand_num).".jpg";
-  //随机图片，须按"1.jpg","2.jpg","3.jpg"...的顺序命名，注意是绝对地址
-  }
-  }
-   $db = Typecho_Db::get();
-   $rs = $db->fetchRow($db->select('table.contents.text')
-      ->from('table.contents')
-      ->where('table.contents.type = ?', 'attachment')
-      ->where('table.contents.parent= ?', $cid)
-      ->order('table.contents.cid', Typecho_Db::SORT_ASC)
-      ->limit(1));
-  $img = unserialize($rs['text']);
-  if (empty($img)){
-      echo $imgurl;
-  }
-  else{
-      echo '你的博客地址'.$img['path'];
-  }
-  }
+
