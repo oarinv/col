@@ -248,6 +248,9 @@ nav-right {
 }
 .page-left h3{
     font-weight: 400;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 .page-right {
   width: 215px;
