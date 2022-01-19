@@ -313,6 +313,7 @@ nav-right {
   word-wrap: break-word;
   font-size: 1em;
   line-height: var(--text-lineheight);
+  margin-bottom: 25px;
 }
 .post h1 {
   font-size: 28px;
