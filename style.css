@@ -403,8 +403,8 @@ img {
 @media screen and (max-width: 500px) {
   .page {
     height: 100px;
-    padding: 20px 0;
-    margin: 0 40px;
+    padding: 10px 0;
+    margin: 0 20px;
     background-color: #fff;
     display: grid;
     grid-template-rows:100% ;
