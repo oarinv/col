@@ -225,82 +225,165 @@ nav-right {
   background-color: #eee;
 }
 /*页面主体*/
-.page {
-  height: 180px;
-  padding: 20px 0;
-  margin: 0 40px;
-  background-color: #fff;
-  display: grid;
-  grid-template-columns: 1fr 215px;
-  grid-template-rows:100% ;
-  justify-content: space-between;
-  gap: 25px;
-  border-bottom: 1px solid #eee;
-}
-.page-left {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
+@media screen and (max-width: 500px) {
+  .page {
+    height: 200px;
+    padding: 20px 0;
+    margin: 0 40px;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows:100% ;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #eee;
+  }
+  .page-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    display: none;
 
+  }
+  .page-left a {
+    line-height: var(--text-lineheight);
+  }
+  .page-left h3{
+      font-weight: 400;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+  }
+  .page-right {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:100% ;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+  .page_img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-rodius);
+    background: var(--imgbg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .page h1 {
+    color: #1a2a3a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+    height: 30px;
+  }
+  .excerpt {
+    color: #2a3a4a;
+    height: 50px;
+    font-size: 14px;
+    line-height: 25px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .time {
+    height: 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .time a {
+    color: var(--text-color);
+  }
 }
-.page-left a {
-  line-height: var(--text-lineheight);
+@media screen and (min-width: 500px) {
+  .page {
+    height: 180px;
+    padding: 20px 0;
+    margin: 0 40px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 215px;
+    grid-template-rows:100% ;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #eee;
+  }
+  .page-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+  }
+  .page-left a {
+    line-height: var(--text-lineheight);
+  }
+  .page-left h3{
+      font-weight: 400;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+  }
+  .page-right {
+    width: 215px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .page_img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-rodius);
+    background: var(--imgbg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .page h1 {
+    color: #1a2a3a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2em;
+    height: 30px;
+  }
+  .excerpt {
+    color: #2a3a4a;
+    height: 50px;
+    font-size: 14px;
+    line-height: 25px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  .time {
+    height: 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .time a {
+    color: var(--text-color);
+  }
 }
-.page-left h3{
-    font-weight: 400;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-}
-.page-right {
-  width: 215px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-.page_img {
-  width: 100%;
-  height: 100%;
-  border-radius: var(--border-rodius);
-  background: var(--imgbg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.page h1 {
-  color: #1a2a3a;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 1.2em;
-  height: 30px;
-}
-.excerpt {
-  color: #2a3a4a;
-  height: 50px;
-  font-size: 14px;
-  line-height: 25px;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-.time {
-  height: 30px;
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.time a {
-  color: var(--text-color);
-}
+
+
 /*文章主体*/
 .post {
   height: auto;
