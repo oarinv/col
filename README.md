@@ -1,9 +1,9 @@
 # col
 typecho theme<br>
 pc<br>
-! [image ] ( ./screenshot.png)
+! [image] ( ./screenshot.png)
 mobile<br>
-! [image ] ( ./1.png)
+! [image] ( ./1.png)
 1.使用主题时文件夹名为 col<br>
 
 2.代码高亮使用prism
