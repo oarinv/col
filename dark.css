@@ -1,3 +1,12 @@
+
+.ce-c{
+    background: #242424!important;
+    color: white!important;
+}
+.ce-c-list:hover{
+    background: #303030!important;
+    color: white!important;
+}
 .title h1{
     color: #ccc!important;
 }
